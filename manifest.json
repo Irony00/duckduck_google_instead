@@ -1,0 +1,33 @@
+{
+    "name": "duckduck_google_instead",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "*://duckduckgo.com/?q=*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://duckduckgo.com/?q=*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "commands": {
+        "search-google": {
+            "suggested_key": {
+                "default": "Ctrl+M"
+            },
+            "description": "search google command"
+        }
+    },
+    "manifest_version": 2
+}
