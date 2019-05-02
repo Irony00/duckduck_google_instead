@@ -8,4 +8,5 @@ Press Ctrl+M
 Profit
 
 # Todo
+- Fix keyboard shortcuts (caused by developer mode maybe?)
 Publish to Chrome Webstore.
